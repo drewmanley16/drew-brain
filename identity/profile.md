@@ -4,19 +4,23 @@
 
 - Name: Drew Manley
 - University: University of Oregon
-- Field: Computer Science
+- Major: Computer Science
+- Minor: Economics
 - Expected graduation: June 2027
+- Note: started as a Business major, switched to CS at the end of freshman year
 
 ## Main Interests
 
-- Software engineering
-- Machine learning and AI agents
-- System design
-- Startups and products
-- Content creation
-- Technical recruiting
-- Blockchain and decentralized systems
+- Software engineering (primary focus)
+- Learning broadly — not narrowly specialized, genuinely likes picking up
+  new topics
+- Startups / building his own company
+- UGC / content creation (recently getting into this seriously)
 
 ## General Direction
 
-Drew wants to become a strong software/ML engineer, build useful products, grow an audience around tech and career content, and create opportunities for other students.
+Drew is pulling in two directions on purpose, not by accident:
+- Get a high-paying, prestigious tech job (SWE-focused)
+- Build or start his own startup
+
+Both paths are live. Don't assume one has "won" unless Drew says so.
