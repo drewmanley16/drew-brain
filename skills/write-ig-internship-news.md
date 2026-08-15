@@ -17,10 +17,13 @@ Read `context/content-instagram.md` for voice rules.
 ## Sourcing companies
 Pull today's real openings from Drew's daily swelist.com email (Gmail, sender
 `noreply@swelist.com`, subject like "X New Internships Posted Today") rather
-than guessing or using stale examples. Pick 4-6 names recognizable to a
-college CS/tech audience (skip niche/irrelevant roles like geomatics or
-survey internships even if they're in the email). swelist.com itself is
-usually the resource to point to in the CTA.
+than guessing or using stale examples. Pick 4-6 names, prioritizing the
+biggest/most recognizable and appealing brands in the list first (e.g.
+ByteDance/TikTok, Jane Street over lesser-known ones like MPR Associates or
+Urban Science) — recognizability drives engagement more than anything else.
+Skip niche/irrelevant roles (geomatics, survey internships) even if
+prominent in the email. swelist.com itself is usually the resource to point
+to in the CTA.
 
 ## Structure
 1. Hook: direct address to the audience + why today matters ("if you're
