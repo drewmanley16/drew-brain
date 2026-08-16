@@ -7,17 +7,28 @@ Track topic history and queue for the daily auto-generated IG carousel
 too soon.
 
 ## Queue (upcoming, pick top unlogged one each run)
+Ordered for broad appeal first — big, widely-searched topics before
+narrower ones, so early posts hit the widest audience while the
+account is still building.
+- python
+- system design
+- javascript
+- machine learning / AI
+- data structures & algorithms
+- SQL and databases
+- react
+- web development (full stack)
 - docker
+- cybersecurity
+- cloud computing / AWS
+- coding interview prep
+- data science
 - git internals / rebasing
-- system design basics
-- SQL joins & indexing
 - Redis
 - Kubernetes fundamentals
 - REST vs GraphQL
 - OAuth / auth flows
 - CI/CD pipelines
-- Big-O / algorithm complexity
-- React hooks
 - Postgres performance
 - Kafka / event streaming
 - Terraform basics
@@ -34,4 +45,6 @@ Format: `YYYY-MM-DD — topic — channels used — output folder`
 - If the queue runs dry, generate 5-10 new topic ideas consistent with
   `context/career.md` / `context/content-creation.md` (CS, AI, SWE,
   recruiting, system design) and append them to the queue instead of
-  stalling.
+  stalling. Favor broad, widely-searched topics (languages, major
+  frameworks, core CS fundamentals) over narrow/niche ones — bigger
+  topics reach more of the audience.
