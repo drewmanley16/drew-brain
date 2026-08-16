@@ -24,9 +24,7 @@ config.json shape:
     ],
     "subtitle": [{"text": "to actually look good on a resume", "color": "accent", "from": 3}],
     "proof_graphic": "assets/carousel-brand/github-graph.png",
-    "proof_logo": "assets/carousel-brand/github-logo.png",
-    "tag_icon": "assets/carousel-brand/youtube-icon.png",
-    "tag_text": "w/YouTube Tutorials"
+    "proof_logo": "assets/carousel-brand/github-logo-white.png"
   },
   "outro": {
     "profile_card": "assets/carousel-brand/ig-profile-card.png",
@@ -62,20 +60,26 @@ ACCENT = (255, 214, 61)
 PILL = (26, 26, 30, 235)
 DUOTONE = (18, 28, 46)  # navy tint multiplied over background photos
 
-HELVETICA_NEUE = "/System/Library/Fonts/HelveticaNeue.ttc"
-SERIF_BOLD = "/System/Library/Fonts/Supplemental/Georgia Bold.ttf"
+AVENIR_NEXT = "/System/Library/Fonts/Avenir Next.ttc"
 PLAIN = "/System/Library/Fonts/Supplemental/Arial.ttf"
 
+# kind -> (ttc_path, face_index) or plain ttf path
+FONT_FACES = {
+    "bold": (AVENIR_NEXT, 8),    # Avenir Next Heavy
+    "demi": (AVENIR_NEXT, 2),    # Avenir Next Demi Bold
+}
 
-def font(size, kind="rounded"):
-    if kind == "rounded":
+
+def font(size, kind="bold"):
+    face = FONT_FACES.get(kind)
+    if face:
+        path, index = face
         try:
-            return ImageFont.truetype(HELVETICA_NEUE, size, index=1)  # Helvetica Neue Bold
+            return ImageFont.truetype(path, size, index=index)
         except OSError:
             pass
-    path = {"serif": SERIF_BOLD, "plain": PLAIN}.get(kind, PLAIN)
     try:
-        return ImageFont.truetype(path, size)
+        return ImageFont.truetype(PLAIN, size)
     except OSError:
         return ImageFont.load_default()
 
@@ -165,7 +169,7 @@ def make_cover(config, out_path):
     draw = ImageDraw.Draw(canvas)
 
     title_font = font(70)
-    y = 190
+    y = 270
     lines = segment_lines(draw, cover["title_lines"], title_font, W - 120)
     for line in lines:
         y = draw_segment_line(draw, line, title_font, W / 2, y)
@@ -173,47 +177,40 @@ def make_cover(config, out_path):
 
     if cover.get("subtitle"):
         sub_font = font(34)
-        sub_text = " ".join(s["text"] for s in cover["subtitle"])
         pad_x, pad_y = 40, 22
         text_w = sum(draw.textlength(s["text"], font=sub_font) for s in cover["subtitle"])
         text_w += 14 * (len(cover["subtitle"]) - 1)
         pill_w, pill_h = text_w + pad_x * 2, sub_font.size + pad_y * 2
         pill_x = W / 2 - pill_w / 2
-        rounded_pill(canvas, (pill_x, y + 20), (pill_w, pill_h))
+        rounded_pill(canvas, (pill_x, y + 40), (pill_w, pill_h))
         draw = ImageDraw.Draw(canvas)
-        draw_segment_line(draw, cover["subtitle"], sub_font, W / 2, y + 20 + pad_y - 6)
-        y += 20 + pill_h + 30
+        draw_segment_line(draw, cover["subtitle"], sub_font, W / 2, y + 40 + pad_y - 6)
+        y += 40 + pill_h + 60
 
     if cover.get("proof_graphic") and Path(cover["proof_graphic"]).exists():
+        # this asset has its background pre-keyed to transparent, so it
+        # composites straight onto the photo with no card/box around it
         graphic = Image.open(cover["proof_graphic"]).convert("RGBA")
         gw = W - 100
         gh = int(gw * graphic.height / graphic.width)
         graphic = graphic.resize((gw, gh), Image.LANCZOS)
-        card = Image.new("RGBA", (gw + 30, gh + 30), (255, 255, 255, 255))
-        card.alpha_composite(graphic, (15, 15))
-        canvas.alpha_composite(card, (50 - 15, int(y)))
-        y += gh + 30 + 40
+        canvas.alpha_composite(graphic, (50, int(y)))
+        y += gh + 50
 
-    row_x = 50
     if cover.get("proof_logo") and Path(cover["proof_logo"]).exists():
+        # fixed watermark spot (top-right corner, over sky) so it's always
+        # legible regardless of what's happening lower in the photo -- a
+        # soft dark chip behind it guarantees contrast on any background
         logo = Image.open(cover["proof_logo"]).convert("RGBA")
-        ls = 140
+        ls = 76
         logo = logo.resize((ls, ls), Image.LANCZOS)
-        canvas.alpha_composite(logo, (row_x, int(y)))
-        row_x += ls + 40
-
-    if cover.get("tag_icon") and Path(cover["tag_icon"]).exists():
-        icon = Image.open(cover["tag_icon"]).convert("RGBA")
-        isz = 90
-        icon = ImageOps.contain(icon, (isz, isz))
-        canvas.alpha_composite(icon, (row_x, int(y) + 25))
-        row_x += isz + 24
-
-    if cover.get("tag_text"):
-        tag_font = font(52, kind="serif")
-        draw = ImageDraw.Draw(canvas)
-        draw.text((row_x, int(y) + 45), cover["tag_text"], font=tag_font, fill=WHITE,
-                   stroke_width=1, stroke_fill=(80, 80, 80))
+        chip_r = 60
+        cx, cy = W - 100, 100
+        overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+        ImageDraw.Draw(overlay).ellipse([cx - chip_r, cy - chip_r, cx + chip_r, cy + chip_r],
+                                         fill=(10, 10, 12, 130))
+        canvas.alpha_composite(overlay)
+        canvas.alpha_composite(logo, (int(cx - ls / 2), int(cy - ls / 2)))
 
     canvas.convert("RGB").save(out_path)
 

@@ -26,8 +26,11 @@ script is the source of truth for exact field names.
 - **Brand assets** (reusable, not sourced per-run — wire in whichever
   exist, omit the rest, never block on a missing one):
   - `assets/carousel-brand/github-graph.png` → `cover.proof_graphic`
-  - `assets/carousel-brand/github-logo.png` → `cover.proof_logo`
-  - `assets/carousel-brand/youtube-icon.png` → `cover.tag_icon`
+    (background pre-keyed transparent — floats directly on the photo, no
+    card/box behind it)
+  - `assets/carousel-brand/github-logo-white.png` → `cover.proof_logo`
+    (white version so it reads on any photo; the composer places it as a
+    fixed top-right watermark, not inline with the graph)
   - `assets/carousel-brand/ig-profile-card.png` → `outro.profile_card`
   - `assets/carousel-brand/outro-photo.png` — the outro's background photo
     is hardcoded to this file inside the composer (falls back to the last
