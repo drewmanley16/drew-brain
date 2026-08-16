@@ -21,6 +21,7 @@ config.json shape:
     "subtitle": [{"text": "to actually look good on a resume", "color": "accent", "from": 3}],
     "proof_graphic": "assets/carousel-brand/github-graph.png",
     "proof_logo": "assets/carousel-brand/github-logo.png",
+    "tag_icon": "assets/carousel-brand/youtube-icon.png",
     "tag_text": "w/YouTube Tutorials"
   },
   "outro": {
@@ -171,19 +172,30 @@ def make_cover(config, out_path):
         gw = W - 100
         gh = int(gw * graphic.height / graphic.width)
         graphic = graphic.resize((gw, gh), Image.LANCZOS)
-        canvas.alpha_composite(graphic, (50, int(y)))
-        y += gh + 40
+        card = Image.new("RGBA", (gw + 30, gh + 30), (255, 255, 255, 255))
+        card.alpha_composite(graphic, (15, 15))
+        canvas.alpha_composite(card, (50 - 15, int(y)))
+        y += gh + 30 + 40
 
+    row_x = 50
     if cover.get("proof_logo") and Path(cover["proof_logo"]).exists():
         logo = Image.open(cover["proof_logo"]).convert("RGBA")
-        ls = 150
+        ls = 140
         logo = logo.resize((ls, ls), Image.LANCZOS)
-        canvas.alpha_composite(logo, (50, int(y)))
+        canvas.alpha_composite(logo, (row_x, int(y)))
+        row_x += ls + 40
+
+    if cover.get("tag_icon") and Path(cover["tag_icon"]).exists():
+        icon = Image.open(cover["tag_icon"]).convert("RGBA")
+        isz = 90
+        icon = ImageOps.contain(icon, (isz, isz))
+        canvas.alpha_composite(icon, (row_x, int(y) + 25))
+        row_x += isz + 24
 
     if cover.get("tag_text"):
         tag_font = font(52, kind="serif")
         draw = ImageDraw.Draw(canvas)
-        draw.text((240, int(y) + 45), cover["tag_text"], font=tag_font, fill=WHITE,
+        draw.text((row_x, int(y) + 45), cover["tag_text"], font=tag_font, fill=WHITE,
                    stroke_width=1, stroke_fill=(80, 80, 80))
 
     canvas.convert("RGB").save(out_path)
