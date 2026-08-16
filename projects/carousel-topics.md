@@ -18,7 +18,6 @@ account is still building.
 - SQL and databases
 - react
 - web development (full stack)
-- docker
 - cybersecurity
 - cloud computing / AWS
 - coding interview prep
@@ -36,6 +35,8 @@ account is still building.
 
 ## Log (most recent first)
 Format: `YYYY-MM-DD — topic — channels used — output folder`
+
+2026-08-16 — docker — The Coding Sloth, TechWorld with Nana, Programming with Mosh, DevOps Directive — projects/carousels/2026-08-16-docker
 
 <!-- entries added by the daily skill go here -->
 
