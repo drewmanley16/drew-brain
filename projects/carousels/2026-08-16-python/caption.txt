@@ -1,0 +1,15 @@
+learning python and don't know where to start? these are the 4 youtube videos that will actually teach you
+
+1. Learn Python - Full Course for Beginners (freeCodeCamp): the most watched python tutorial on youtube. covers syntax through classes in one sitting, 50M+ views for a reason
+
+2. Python for Beginners - Full Course (Programming with Mosh): mosh's 6 hour crash course, 42M views, builds from basics into real projects instead of just syntax
+
+3. The Complete Python Course For Beginners (Tech With Tim): goes past the basics into file handling, error handling and your first taste of OOP
+
+4. Python OOP Tutorial 1: Classes and Instances (Corey Schafer): once the fundamentals click, this is the video every serious python dev has watched
+
+save this before you forget
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python
