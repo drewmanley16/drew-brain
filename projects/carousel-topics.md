@@ -7,7 +7,6 @@ Track topic history and queue for the daily auto-generated IG carousel
 too soon.
 
 ## Queue (upcoming, pick top unlogged one each run)
-- docker
 - git internals / rebasing
 - system design basics
 - SQL joins & indexing
@@ -25,6 +24,8 @@ too soon.
 
 ## Log (most recent first)
 Format: `YYYY-MM-DD — topic — channels used — output folder`
+
+2026-08-16 — docker — The Coding Sloth, TechWorld with Nana, Programming with Mosh, DevOps Directive — projects/carousels/2026-08-16-docker
 
 <!-- entries added by the daily skill go here -->
 

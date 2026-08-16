@@ -1,0 +1,19 @@
+docker is the thing that trips up more CS students than it should
+
+so here are 4 youtube videos that actually explain it right, from beginner to production
+
+1. The Only Docker Tutorial You Need To Get Started - The Coding Sloth
+fastest way to get docker running, images and containers and volumes, no fluff
+
+2. Docker Tutorial for Beginners [FULL COURSE in 3 Hours] - TechWorld with Nana
+the most watched full docker course on youtube, animated explanations plus real demos
+
+3. Docker Tutorial for Beginners - Programming with Mosh
+the most structured intro, vms vs containers straight into a real dev workflow
+
+4. Complete Docker Course - From BEGINNER to PRO! - DevOps Directive
+the deep dive once the basics click, multi stage builds and shipping to production
+
+save this before your next project or interview asks about containers
+
+follow + comment DOCKER and I'll send you the full list
