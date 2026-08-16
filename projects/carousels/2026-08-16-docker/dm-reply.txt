@@ -1,0 +1,16 @@
+Thanks for commenting! Here are the 4 videos:
+
+The Only Docker Tutorial You Need To Get Started
+https://www.youtube.com/watch?v=DQdB7wFEygo
+
+Docker Tutorial for Beginners [FULL COURSE in 3 Hours]
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
+Docker Tutorial for Beginners
+https://www.youtube.com/watch?v=pTFZFxd4hOI
+
+Complete Docker Course - From BEGINNER to PRO! (Learn Containers)
+https://www.youtube.com/watch?v=RqTEHSBrYFw
+
+go build something with docker this week,
+Drew

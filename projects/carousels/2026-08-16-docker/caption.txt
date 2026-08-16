@@ -16,4 +16,5 @@ the deep dive once the basics click, multi stage builds and shipping to producti
 
 save this before your next project or interview asks about containers
 
-follow + comment DOCKER and I'll send you the full list
+comment DOCKER and I'll send you all these resources
+#softwareengineer #csmajor #docker
