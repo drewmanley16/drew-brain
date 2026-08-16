@@ -26,8 +26,11 @@ script is the source of truth for exact field names.
 - **Brand assets** (reusable, not sourced per-run — wire in whichever
   exist, omit the rest, never block on a missing one):
   - `assets/carousel-brand/github-graph.png` → `cover.proof_graphic`
-  - `assets/carousel-brand/github-logo.png` → `cover.proof_logo`
-  - `assets/carousel-brand/youtube-icon.png` → `cover.tag_icon`
+    (background pre-keyed transparent — floats directly on the photo, no
+    card/box behind it)
+  - `assets/carousel-brand/github-logo-white.png` → `cover.proof_logo`
+    (white version so it reads on any photo; the composer places it as a
+    fixed top-right watermark, not inline with the graph)
   - `assets/carousel-brand/ig-profile-card.png` → `outro.profile_card`
   - `assets/carousel-brand/outro-photo.png` — the outro's background photo
     is hardcoded to this file inside the composer (falls back to the last
@@ -95,10 +98,37 @@ script is the source of truth for exact field names.
 
 6. **Write the caption** as `caption.txt` in the output folder (not inside
    either variant subfolder), following the resource-post shape in
-   `context/content-instagram.md` (hook, why it matters, the list, follow
-   CTA). Plain lines, no markdown.
+   `context/content-instagram.md` (hook, why it matters, the list) for the
+   body, but this format's CTA and hashtags are a fixed exception to that
+   file's "no hashtags" rule:
+   - CTA line: `comment <WORD> and I'll send you all these resources` —
+     `<WORD>` is the same accent-colored CTA word used on the outro slide
+     (e.g. `PYTHON`, `DOCKER`), uppercase.
+   - End with exactly 3 hashtags, always in this order: `#softwareengineer
+     #csmajor #<topic>` — the third is specific to the day's topic
+     (lowercase, no spaces: `#python`, `#docker`, `#systemdesign`).
 
-7. **House-keeping**:
+7. **Write the DM reply** as `dm-reply.txt` in the output folder — the
+   message Drew pastes to everyone who comments the CTA word. Shape
+   (match this exactly, plain lines no markdown):
+   ```
+   Thanks for commenting! Here are the 4 videos:
+
+   <video 1 title>
+   https://www.youtube.com/watch?v=<video 1 id>
+
+   <video 2 title>
+   https://www.youtube.com/watch?v=<video 2 id>
+
+   ... (one per video, same order as the carousel)
+
+   <one line sign-off specific to the topic>,
+   Drew
+   ```
+   Use the exact video IDs already verified in step 2/3 — never a
+   different or shortened link than what was actually fetched.
+
+8. **House-keeping**:
    - Move each used background photo from `inbox/` to `archive/`.
    - Append a log line to `projects/carousel-topics.md`'s Log section:
      `YYYY-MM-DD — topic — channels used — output folder path`.
@@ -108,7 +138,8 @@ script is the source of truth for exact field names.
 `projects/carousels/YYYY-MM-DD-<topic-slug>/` containing:
 - `with-thumbnails/01-cover.png`, `02..N-video.png`, `NN-outro.png`
 - `placeholder/` — same filenames, thumbnails blanked
-- `caption.txt`
+- `caption.txt` — IG post caption, ends with the comment-CTA line + 3 hashtags
+- `dm-reply.txt` — the message Drew sends to everyone who comments the CTA word
 
 Plus a short chat/notification summary: topic, channels featured, and the
 output folder path.
