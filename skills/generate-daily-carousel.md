@@ -52,9 +52,16 @@ topic fit (CS students, early-career SWE, recruiting-adjacent).
 
 4. **Compose the images**:
    - Create `projects/carousels/YYYY-MM-DD-<topic-slug>/`.
-   - Build a config JSON (background, out_dir, tag, cover, outro, videos
-     with screenshot paths) per the shape documented at the top of
-     `scripts/compose_carousel.py`.
+   - Build a config JSON per the shape documented at the top of
+     `scripts/compose_carousel.py` (cover title/subtitle as color/underline
+     segments, one video block per researched video, outro lines + CTA
+     word).
+   - If `assets/carousel-brand/github-graph.png`, `github-logo.png`, and/or
+     `ig-profile-card.png` exist, wire them into `cover.proof_graphic` /
+     `cover.proof_logo` / `outro.profile_card` — these are Drew's reusable
+     personal branding assets, not something to source per-topic. If they
+     don't exist yet, just omit those config keys; the composer renders
+     fine without them.
    - Run `python3 scripts/compose_carousel.py <config.json>`.
    - Read back at least the cover slide and one video slide to sanity
      check text isn't clipped/overlapping before calling it done.
