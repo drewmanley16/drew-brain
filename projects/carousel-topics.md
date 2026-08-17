@@ -10,7 +10,6 @@ too soon.
 Ordered for broad appeal first — big, widely-searched topics before
 narrower ones, so early posts hit the widest audience while the
 account is still building.
-- python
 - system design
 - javascript
 - machine learning / AI
@@ -38,6 +37,7 @@ account is still building.
 Format: `YYYY-MM-DD — topic — channels used — output folder`
 
 <!-- entries added by the daily skill go here -->
+2026-08-17 — python — freeCodeCamp, Programming with Mosh, Tech With Tim, Corey Schafer — projects/carousels/2026-08-17-python
 
 ## Rules
 - Don't repeat a topic that's in the log within the last 60 days.

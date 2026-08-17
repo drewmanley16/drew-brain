@@ -1,0 +1,15 @@
+best youtube videos to learn python
+
+if you're starting from zero, don't guess your way through 15 random tutorials. these are the 4 channels that actually explain it well.
+
+1. python for everybody (freecodecamp) - dr chuck's 14 hour university course, the deepest full walkthrough out there, variables all the way to web scraping and databases
+
+2. python full course for beginners (programming with mosh) - same fundamentals in 2 hours if you want the fast version, project based, no fluff
+
+3. the complete python course for beginners (tech with tim) - functions, file handling, error handling, classes, inheritance, walked through end to end
+
+4. python oop 1 - classes and instances (corey schafer) - once you know the basics, this is the video that makes object oriented python actually click
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python
