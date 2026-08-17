@@ -1,0 +1,47 @@
+{
+  "backgrounds": [
+    "assets/carousel-backgrounds/inbox/1.png",
+    "assets/carousel-backgrounds/inbox/2.png",
+    "assets/carousel-backgrounds/inbox/3.png",
+    "assets/carousel-backgrounds/inbox/4.png",
+    "assets/carousel-backgrounds/inbox/5.png",
+    "assets/carousel-backgrounds/inbox/6.png"
+  ],
+  "out_dir": "projects/carousels/2026-08-17-python",
+  "cover": {
+    "title_lines": [
+      [{"text": "best youtube videos"}],
+      [{"text": "to learn"}, {"text": "python", "color": "accent", "underline": true}]
+    ],
+    "subtitle": [{"text": "the exact channels i'd start with today"}],
+    "proof_graphic": "assets/carousel-brand/github-graph.png",
+    "proof_logo": "assets/carousel-brand/github-logo-white.png"
+  },
+  "outro": {
+    "profile_card": "assets/carousel-brand/ig-profile-card.png",
+    "lines": ["want the full list?", "follow + comment"],
+    "cta_word": "PYTHON"
+  },
+  "videos": [
+    {
+      "rank": 1,
+      "title": "Python for Everybody - Full University Python Course",
+      "description": "a 14 hour university course taught by dr chuck at michigan that freecodecamp turned into one of the most watched python videos on youtube. covers everything from variables to web scraping and databases, no prior experience needed."
+    },
+    {
+      "rank": 2,
+      "title": "Python Full Course for Beginners (Programming with Mosh)",
+      "description": "mosh hamedani's 2 hour crash course trades length for pace, hits every fundamental, variables, loops, functions, early oop, with the clean project based teaching his channel is known for."
+    },
+    {
+      "rank": 3,
+      "title": "The Complete Python Course For Beginners (Tech With Tim)",
+      "description": "tim ruscica walks the language end to end, functions, file handling, string methods, error handling, classes and inheritance, in the same practical style he uses across his project tutorials."
+    },
+    {
+      "rank": 4,
+      "title": "Python OOP 1 - Classes and Instances (Corey Schafer)",
+      "description": "once you know the basics, this is the video that makes object oriented python click. corey schafer's oop series is still the most recommended intro to classes and instances years after it went up."
+    }
+  ]
+}
