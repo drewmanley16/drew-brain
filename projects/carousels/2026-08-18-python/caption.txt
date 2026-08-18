@@ -1,0 +1,9 @@
+if you're trying to learn python and don't know where to start, here are 4 channels that actually teach it well
+
+freeCodeCamp's full beginner course, mosh hamedani's structured walkthrough, corey schafer's classic OOP series, and bro code's project-based course
+
+saved you the hours of scrolling through bad tutorials
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python

@@ -1,0 +1,47 @@
+{
+  "backgrounds": [
+    "assets/carousel-backgrounds/inbox/1.png",
+    "assets/carousel-backgrounds/inbox/2.png",
+    "assets/carousel-backgrounds/inbox/3.png",
+    "assets/carousel-backgrounds/inbox/4.png",
+    "assets/carousel-backgrounds/inbox/5.png",
+    "assets/carousel-backgrounds/inbox/6.png"
+  ],
+  "out_dir": "projects/carousels/2026-08-18-python",
+  "cover": {
+    "title_lines": [
+      [{"text": "best youtube videos", "underline": true}],
+      [{"text": "to learn"}, {"text": "python", "color": "accent"}]
+    ],
+    "subtitle": [{"text": "the channels people actually learn from"}],
+    "proof_graphic": "assets/carousel-brand/github-graph.png",
+    "proof_logo": "assets/carousel-brand/github-logo-white.png"
+  },
+  "outro": {
+    "profile_card": "assets/carousel-brand/ig-profile-card.png",
+    "lines": ["want the full list?", "follow + comment"],
+    "cta_word": "PYTHON"
+  },
+  "videos": [
+    {
+      "rank": 1,
+      "title": "Learn Python - Full Course for Beginners [Tutorial]",
+      "description": "freeCodeCamp's flagship python course, over 50 million views. covers syntax, data structures, and OOP from zero in one sitting."
+    },
+    {
+      "rank": 2,
+      "title": "Python Full Course for Beginners",
+      "description": "mosh hamedani breaks python into short, focused sections instead of one long ramble. best pick if you want structure you can actually follow."
+    },
+    {
+      "rank": 3,
+      "title": "Python OOP Tutorial 1: Classes and Instances",
+      "description": "the tutorial almost every python dev used to finally understand classes and objects. slower pace, way more useful once you're past the basics."
+    },
+    {
+      "rank": 4,
+      "title": "Python Full Course for Beginners",
+      "description": "bro code's 12 hour course ends in real projects, not just theory. tic tac toe, a calculator, snake, the stuff that makes python click."
+    }
+  ]
+}
