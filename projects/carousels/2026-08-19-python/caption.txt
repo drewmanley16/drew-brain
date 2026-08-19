@@ -1,0 +1,19 @@
+if you're trying to learn python this is the exact list i'd hand a beginner
+
+no random 10 minute clips, just full courses and series from channels that actually know how to teach
+
+1. python for beginners - learn python in 1 hour (programming with mosh)
+the fastest way to get python running and see the syntax before anything else
+
+2. learn python - full course for beginners (freecodecamp, taught by mike dane)
+the one to actually sit down with, covers functions, files, and oop basics
+
+3. the complete python course for beginners (tech with tim)
+project based so you're writing code with him, not just watching
+
+4. python oop tutorial 1: classes and instances (corey schafer)
+the video that makes classes and objects finally click
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python
