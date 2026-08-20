@@ -1,0 +1,16 @@
+you don't need another "learn python in 2026" post
+
+you need the actual 4 videos that get people from zero to writing real code, and most lists just recycle the same generic advice without naming anything
+
+so here's what i'd actually watch, in order
+
+1. Learn Python - Full Course for Beginners (freeCodeCamp) - the most watched python video on youtube. covers every core basic and builds a calculator, mad libs game and guessing game with you
+2. Python for Beginners - Full Course (Programming with Mosh) - clean, structured, one of the most recommended first python videos if you've genuinely never coded before
+3. The Complete Python Course For Beginners (Tech With Tim) - takes you from zero syntax to actually building projects, so you're writing real programs instead of just watching someone type
+4. Python OOP Tutorial 1: Classes and Instances (Corey Schafer) - the oop series almost every intermediate python dev eventually watches. this is where you go from knowing syntax to actually being good
+
+watch these in order and you'll go from never opened python to writing real programs
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python
