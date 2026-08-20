@@ -1,0 +1,47 @@
+{
+  "backgrounds": [
+    "assets/carousel-backgrounds/inbox/1.png",
+    "assets/carousel-backgrounds/inbox/2.png",
+    "assets/carousel-backgrounds/inbox/3.png",
+    "assets/carousel-backgrounds/inbox/4.png",
+    "assets/carousel-backgrounds/inbox/5.png",
+    "assets/carousel-backgrounds/inbox/5.png"
+  ],
+  "out_dir": "projects/carousels/2026-08-20-python",
+  "cover": {
+    "title_lines": [
+      [{"text": "best youtube videos", "underline": true}],
+      [{"text": "to learn"}, {"text": "python", "color": "accent"}]
+    ],
+    "subtitle": [{"text": "4 real videos that'll actually teach you", "color": "accent"}],
+    "proof_graphic": "assets/carousel-brand/github-graph.png",
+    "proof_logo": "assets/carousel-brand/github-logo-white.png"
+  },
+  "outro": {
+    "profile_card": "assets/carousel-brand/ig-profile-card.png",
+    "lines": ["want the full list?", "follow + comment"],
+    "cta_word": "PYTHON"
+  },
+  "videos": [
+    {
+      "rank": 1,
+      "title": "Learn Python - Full Course for Beginners",
+      "description": "freeCodeCamp's most watched python video. covers every core basic, lists, loops, functions, classes, and builds a calculator, mad libs game and guessing game as you go."
+    },
+    {
+      "rank": 2,
+      "title": "Python for Beginners - Full Course",
+      "description": "mosh hamedani's beginner course. clean and structured, one of the most recommended first python videos if you've genuinely never coded before."
+    },
+    {
+      "rank": 3,
+      "title": "The Complete Python Course For Beginners",
+      "description": "tech with tim takes you from zero syntax to actually building projects, so you're writing real programs instead of just watching someone else type."
+    },
+    {
+      "rank": 4,
+      "title": "Python OOP Tutorial 1: Classes and Instances",
+      "description": "corey schafer's oop series is the one almost every intermediate python dev eventually watches. once you know the basics this is where you actually get good."
+    }
+  ]
+}
