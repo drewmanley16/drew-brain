@@ -1,0 +1,19 @@
+if you're trying to learn python and don't know where to start, here are the 4 videos i'd actually watch, ranked beginner to advanced.
+
+most "learn python" content is the same 10 minute overview recycled a hundred times. these aren't that. they're full courses from channels that actually know what they're doing, and they build on each other so you're not jumping around.
+
+1. programming with mosh - python tutorial for beginners [full course]
+the most watched python video on youtube (42m+ views). fast crash course through syntax then 3 real projects including a django site.
+
+2. tech with tim - the complete python course for beginners
+goes further than most beginner courses, all the way to classes and inheritance, so you're not stuck relearning oop later.
+
+3. corey schafer - python oop tutorial 1: classes and instances
+the video cs students actually cite for finally getting classes and self. 15 minutes, code along, zero fluff.
+
+4. freecodecamp - harvard cs50's intro to programming with python
+the real cs50p lecture set, taught by david malan. 16 hours of functions, exceptions, unit testing and oop with actual cs grounding.
+
+comment PYTHON and i'll send you all these resources
+
+#softwareengineer #csmajor #python
