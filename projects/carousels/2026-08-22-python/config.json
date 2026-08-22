@@ -1,0 +1,47 @@
+{
+  "backgrounds": [
+    "assets/carousel-backgrounds/inbox/1.png",
+    "assets/carousel-backgrounds/inbox/2.png",
+    "assets/carousel-backgrounds/inbox/3.png",
+    "assets/carousel-backgrounds/inbox/4.png",
+    "assets/carousel-backgrounds/inbox/5.png",
+    "assets/carousel-backgrounds/inbox/1.png"
+  ],
+  "out_dir": "projects/carousels/2026-08-22-python",
+  "cover": {
+    "title_lines": [
+      [{"text": "best youtube videos"}],
+      [{"text": "to learn"}, {"text": "python", "color": "accent", "underline": true}]
+    ],
+    "subtitle": [{"text": "4 real courses,"}, {"text": "zero fluff", "color": "accent"}],
+    "proof_graphic": "assets/carousel-brand/github-graph.png",
+    "proof_logo": "assets/carousel-brand/github-logo-white.png"
+  },
+  "outro": {
+    "profile_card": "assets/carousel-brand/ig-profile-card.png",
+    "lines": ["want the full list?", "follow + comment"],
+    "cta_word": "PYTHON"
+  },
+  "videos": [
+    {
+      "rank": 1,
+      "title": "Learn Python - Full Course for Beginners",
+      "description": "freeCodeCamp's course, the most watched python tutorial on youtube at over 50 million views. covers syntax, data structures, and functions from zero, then builds real projects like a tic tac toe game and a webcam motion detector."
+    },
+    {
+      "rank": 2,
+      "title": "Python Full Course for Beginners",
+      "description": "programming with mosh's 6 hour walkthrough from a former microsoft engineer. moves faster than the freeCodeCamp version and spends more time on object oriented programming and working with modules."
+    },
+    {
+      "rank": 3,
+      "title": "Python Tutorial for Beginners",
+      "description": "corey schafer's series is the deepest fundamentals playlist on youtube. his videos on classes, decorators, and the standard library are what most working python engineers actually learned from."
+    },
+    {
+      "rank": 4,
+      "title": "Python Decorators: The Complete Guide",
+      "description": "once the basics click, arjancodes breaks down how decorators actually work under the hood, functional vs class based, functools.wraps, and when not to use them. the one most beginners skip and shouldn't."
+    }
+  ]
+}

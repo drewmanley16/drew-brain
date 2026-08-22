@@ -1,0 +1,19 @@
+learning python and don't know which youtube video to actually trust
+
+here are the 4 that get recommended by real engineers, not clickbait
+
+1. freeCodeCamp - Learn Python: Full Course for Beginners
+the most watched python tutorial on youtube, over 50 million views. covers everything from syntax to two real projects
+
+2. Programming with Mosh - Python Full Course for Beginners
+a tighter 6 hour version from a former microsoft engineer. faster pace, more time on OOP
+
+3. Corey Schafer - Python Tutorial for Beginners
+the deepest fundamentals series on youtube. most working python engineers actually learned from this one
+
+4. ArjanCodes - Python Decorators: The Complete Guide
+once the basics click, this is the video most beginners skip and shouldn't
+
+comment PYTHON and I'll send you all these resources
+
+#softwareengineer #csmajor #python
